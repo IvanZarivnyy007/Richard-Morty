@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  padding: 10px 0;
+}
+
+.navlink {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navlink:hover {
+  background-color: white;
+}
+
+.navlink.active {
+  background-color: white;
+  font-weight: bold;
+}
