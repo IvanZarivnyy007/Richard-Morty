@@ -9,6 +9,7 @@ const initialState = {
   array: [],
   isLoading: false,
   error: null,
+  total: 0,
 };
 
 const handlePending = (state, { payload }) => {
@@ -28,17 +29,19 @@ export const RichardMortySlice = createSlice({
       .addCase(fetchGetCharacter.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = action.payload;
+        state.array = action.payload.results;
+        state.total = action.payload.info.count;
       })
       .addCase(fetchGetLocation.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = action.payload;
+        state.array = action.payload.results;
+        state.total = action.payload.info.count;
       })
       .addCase(fetchGetEpisode.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = action.payload;
+        state.array = action.payload;
       })
       .addCase(fetchGetEpisode.pending, handlePending)
       .addCase(fetchGetEpisode.rejected, handleRejected)

@@ -3,9 +3,9 @@ import axios from 'axios';
 
 export const fetchGetCharacter = createAsyncThunk(
   'character/fetchGetCharacter',
-  async (_, thunkAPI) => {
+  async (page, thunkAPI) => {
     const BASE_URL = 'https://rickandmortyapi.com/api';
-    const END_POINT = '/character';
+    const END_POINT = `/character?page=${page}`;
     const url = BASE_URL + END_POINT;
 
     try {
@@ -19,9 +19,9 @@ export const fetchGetCharacter = createAsyncThunk(
 
 export const fetchGetLocation = createAsyncThunk(
   'location/fetchGetLocation',
-  async (_, thunkAPI) => {
+  async (page, thunkAPI) => {
     const BASE_URL = 'https://rickandmortyapi.com/api';
-    const END_POINT = '/location';
+    const END_POINT = `/location?page=${page}`;
     const url = BASE_URL + END_POINT;
 
     try {
