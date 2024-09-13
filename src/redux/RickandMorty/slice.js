@@ -41,7 +41,8 @@ export const RichardMortySlice = createSlice({
       .addCase(fetchGetEpisode.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.array = action.payload;
+        state.array = action.payload.results;
+        state.total = action.payload.info.count;
       })
       .addCase(fetchGetEpisode.pending, handlePending)
       .addCase(fetchGetEpisode.rejected, handleRejected)
