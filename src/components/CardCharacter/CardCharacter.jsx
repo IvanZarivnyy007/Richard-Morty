@@ -15,7 +15,7 @@ const CardCharacter = ({ item }) => {
           <strong>Gender:</strong> {item.gender}
         </p>
         <p className="card-detail">
-          <strong>Origin:</strong> {item.origin.name}
+          {/* <strong>Origin:</strong> {item.origin.name} */}
         </p>
         <p className="card-detail">
           <strong>Location:</strong> {item.location.name}

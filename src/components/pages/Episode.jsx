@@ -4,7 +4,7 @@ import EpisodeList from '../CardEpisode/EpisodeList';
 const Episode = ({}) => {
   return (
     <div>
-      <h1 className="episode-title">Welcome to Episode Page </h1>
+      <h1 className="episode-title"> Episodes </h1>
       <BackgroundImageEpisode />
       <EpisodeList />
     </div>

@@ -10,7 +10,7 @@ export const fetchGetCharacter = createAsyncThunk(
 
     try {
       const response = await axios.get(url);
-      const limitedResults = response.data.results.slice(0, 9);
+      const limitedResults = response.data.results.slice(0, 18);
       return { ...response.data, results: limitedResults };
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
@@ -27,7 +27,7 @@ export const fetchGetLocation = createAsyncThunk(
 
     try {
       const response = await axios.get(url);
-      const limitedResults = response.data.results.slice(0, 9);
+      const limitedResults = response.data.results.slice(0, 18);
       return { ...response.data, results: limitedResults };
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);

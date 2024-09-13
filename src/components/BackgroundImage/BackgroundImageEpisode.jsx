@@ -1,4 +1,4 @@
-import img from '../../images/thumb-1920-1262852.jpg';
+import img from '../../images/1335145.jpg';
 
 const BackgroundImageEpisode = () => {
   return (

@@ -38,6 +38,11 @@ const LocationList = () => {
         total={total}
         onChange={handlePageChange}
         showSizeChanger={false}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: '40px',
+        }}
       />
     </div>
   );
