@@ -36,7 +36,7 @@
 .card-detail {
   margin: 0.2em 0;
   font-size: 1.2em;
-  color: lawngreen;
+  color: lightgoldenrodyellow;
 }
 
 /* /////////////////////////////////////// */
@@ -70,14 +70,15 @@
 
 .home-title {
   display: flex;
-  font-size: 90px;
+  font-size: 60px;
   font-family: sans-serif;
-  color: skyblue;
-  margin-left: 30px;
+  color: sandybrown;
+  margin-left: 300px;
   /* background-color: rgba(135, 206, 250, 0.2); */
   padding: 10px;
   border-radius: 10px;
-  text-shadow: 1px 5px 0 greenyellow;
+  text-shadow: 1px 5px 0 brown;
+  margin-top: 95px;
 }
 
 .location-list {
@@ -161,10 +162,10 @@
 
 .card-location {
   background-color: #e0f7e0;
-  border: 4px solid lawngreen;
+  /* border: 4px solid lawngreen; */
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 10px 10px 0 #32cd32;
+  /* box-shadow: 10px 10px 0 #32cd32; */
   max-width: 400px;
   margin: 20px auto;
   font-family: 'Comic Sans MS', 'Comic Neue', cursive;
@@ -216,4 +217,60 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+/* ///////////////////////////////////////////////// */
+
+.alien-icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background: red;
+  display: flex;
+  align-content: space-between;
+  margin-left: 140px;
+  margin-top: -13px;
+  animation: blin 1s infinite;
+}
+
+@keyframes blin {
+  0% {
+    background: red;
+  }
+  50% {
+    background: rgba(85, 204, 68, 0);
+  }
+  100% {
+    background: red;
+  }
+}
+
+.human-icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background: rgb(85, 204, 68);
+  display: flex;
+  align-content: space-between;
+  margin-left: 140px;
+  margin-top: -13px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background: rgb(85, 204, 68);
+  }
+  50% {
+    background: rgba(85, 204, 68, 0);
+  }
+  100% {
+    background: rgb(85, 204, 68);
+  }
+}
+
+.location-hower:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: black;
 }

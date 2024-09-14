@@ -3,16 +3,16 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-  background-color: rgba(135, 206, 250, 0.2);
+  /* background-color: rgba(135, 206, 250, 0.2); */
   padding: 10px;
   border-radius: 10px;
 }
 
 .navlink {
-  color: black;
+  color: sandybrown;
   text-decoration: none;
-  padding: 10px 10px;
-  font-size: 30px;
+  padding: 6px 6px;
+  font-size: 29px;
   transition: background-color 0.3s ease;
   border-radius: 5px;
   text-shadow: 1px 1px 0 white;

@@ -1,4 +1,4 @@
-import img from '../../images/wallpaperflare.com_wallpapes.jpg';
+import img from '../../images/1259528.jpg';
 
 const BackgroundImage = () => {
   return (

@@ -8,8 +8,18 @@ const CardCharacter = ({ item }) => {
         <p className="card-detail">
           <strong>Status:</strong> {item.status}
         </p>
+
         <p className="card-detail">
-          <strong>Species:</strong> {item.species}
+          <strong>Species:</strong>{' '}
+          {item.species == 'Human' ? (
+            <>
+              Human <span className="human-icon"></span>
+            </>
+          ) : (
+            <>
+              Alien <span className="alien-icon"></span>
+            </>
+          )}
         </p>
         <p className="card-detail">
           <strong>Gender:</strong> {item.gender}
@@ -17,8 +27,9 @@ const CardCharacter = ({ item }) => {
         <p className="card-detail">
           {/* <strong>Origin:</strong> {item.origin.name} */}
         </p>
-        <p className="card-detail">
-          <strong>Location:</strong> {item.location.name}
+        <p className="card-detail ">
+          <strong>Location:</strong>{' '}
+          <span className="location-hower">{item.location.name}</span>
         </p>
       </div>
     </div>
