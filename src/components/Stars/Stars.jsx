@@ -1,19 +1,19 @@
 import css from './Stars.module.css';
 
-const Stars = () => {
+const Stars = ({}) => {
   return (
     <div>
       <section>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
+        <span className={css.star}></span>
       </section>
     </div>
   );
