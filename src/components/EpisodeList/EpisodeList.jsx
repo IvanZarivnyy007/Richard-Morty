@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { selectArray, selectTotal } from '../../redux/RickandMorty/selectors';
 import { Pagination } from 'antd';
 import { fetchGetEpisode } from './../../redux/RickandMorty/operations';
+import css from './EpisodeList.module.css';
 
 const EpisodeList = () => {
   const [page, setPage] = useState(1);
@@ -20,11 +21,11 @@ const EpisodeList = () => {
   };
 
   return (
-    <div className="episode-list">
-      <ul className="character-grid">
+    <div className={css['episode-list']}>
+      <ul className={css['character-grid']}>
         {array.length > 0 ? (
           array.map((item) => (
-            <li key={item.id} className="character-item">
+            <li key={item.id} className={css['character-item']}>
               <CardEpisode elem={item} />
             </li>
           ))

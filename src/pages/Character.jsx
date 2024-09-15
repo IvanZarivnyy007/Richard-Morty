@@ -1,5 +1,5 @@
-import CharacterList from './../CardCharacter/CharacterList';
-import BackgroundImageLocation from './../BackgroundImage/BackgroundImageLocation';
+import CharacterList from '../components/CharacterList/CharacterList';
+import BackgroundImageLocation from '../components/BackgroundImage/BackgroundImageLocation';
 
 const Character = () => {
   return (

@@ -1,5 +1,5 @@
-import BackgroundImage from '../BackgroundImage/BackgroundImage';
-import Stars from '../Stars/Stars';
+import BackgroundImage from '../components/BackgroundImage/BackgroundImage';
+import Stars from '../components/Stars/Stars';
 
 const Home = () => {
   return (

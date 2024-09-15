@@ -1,5 +1,5 @@
-import BackgroundImageLocation from './../BackgroundImage/BackgroundImageLocation';
-import LocationList from '../CardLocation/LocatonList';
+import BackgroundImageLocation from '../components/BackgroundImage/BackgroundImageLocation';
+import LocationList from '../components/LocationList/LocatonList';
 
 const Location = ({}) => {
   return (

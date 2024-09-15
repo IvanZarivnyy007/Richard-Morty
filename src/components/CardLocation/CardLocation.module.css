@@ -1,0 +1,41 @@
+.card-location {
+  background-color: #e0f7e0;
+  border: 4px solid lawngreen;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.card-location:hover {
+  transform: translateY(-5px);
+}
+
+.card-location:hover {
+  transform: translateY(-5px);
+}
+
+.location-name {
+  font-size: 23px;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 0 greenyellow;
+  margin-bottom: 10px;
+}
+
+.location-detail {
+  font-size: 17px;
+  margin: 10px 4px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.location-detail strong {
+  color: teal;
+}

@@ -3,7 +3,8 @@ import { fetchGetLocation } from '../../redux/RickandMorty/operations';
 import { useEffect, useState } from 'react';
 import { selectArray, selectTotal } from '../../redux/RickandMorty/selectors';
 import { Pagination } from 'antd';
-import CardLocation from './CardLocation';
+import CardLocation from '../CardLocation/CardLocation';
+import css from './LocationList.module.css';
 
 const LocationList = () => {
   const [page, setPage] = useState(1);
@@ -20,11 +21,11 @@ const LocationList = () => {
   };
 
   return (
-    <div className="location-list">
-      <ul className="character-grid">
+    <div className={css['location-list']}>
+      <ul className={css['character-grid']}>
         {array.length > 0 ? (
           array.map((item) => (
-            <li key={item.id} className="character-item">
+            <li key={item.id} className={css['character-item']}>
               <CardLocation data={item} />
             </li>
           ))

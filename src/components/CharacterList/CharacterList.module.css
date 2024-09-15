@@ -1,0 +1,13 @@
+.character-item {
+  list-style: none;
+}
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.character-item {
+  flex: 1 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+}

@@ -1,35 +1,34 @@
+import css from './CardCharacter.module.css';
+
 const CardCharacter = ({ item }) => {
   return (
-    <div className="card">
-      <img src={item.image} alt={item.name} className="card-image" />
-
-      <div className="card-info">
-        <h2 className="card-name">{item.name}</h2>
-        <p className="card-detail">
+    <div className={css.card}>
+      <img src={item.image} alt={item.name} className={css['card-image']} />
+      <div className={css['card-info']}>
+        <h2 className={css['card-name']}>{item.name}</h2>
+        <p className={css['card-detail']}>
           <strong>Status:</strong> {item.status}
         </p>
-
-        <p className="card-detail">
+        <p className={css['card-detail']}>
           <strong>Species:</strong>{' '}
-          {item.species == 'Human' ? (
+          {item.species === 'Human' ? (
             <>
-              Human <span className="human-icon"></span>
+              Human <span className={css['human-icon']}></span>
             </>
           ) : (
             <>
-              Alien <span className="alien-icon"></span>
+              Alien <span className={css['alien-icon']}></span>
             </>
           )}
         </p>
-        <p className="card-detail">
+        <p className={css['card-detail']}>
           <strong>Gender:</strong> {item.gender}
         </p>
-        <p className="card-detail">
+        <p className={css['card-detail']}>
           <strong>Origin:</strong> {item.origin?.name}
         </p>
-        <p className="card-detail ">
-          <strong>Location:</strong>{' '}
-          <span className="location-hower">{item.location?.name}</span>
+        <p className={`${css['card-detail']} ${css['location-hower']}`}>
+          <strong>Location:</strong> <span>{item.location?.name}</span>
         </p>
       </div>
     </div>

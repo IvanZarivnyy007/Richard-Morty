@@ -1,0 +1,20 @@
+.card-episode {
+  background-color: gold;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.episode-name {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.episode-detail {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}

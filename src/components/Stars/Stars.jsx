@@ -1,10 +1,19 @@
-const Stars = ({}) => {
+import css from './Stars.module.css';
+
+const Stars = () => {
   return (
     <div>
-      <section className="wrapper">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+      <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </section>
     </div>
   );

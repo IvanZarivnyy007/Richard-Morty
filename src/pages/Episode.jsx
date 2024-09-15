@@ -1,5 +1,5 @@
-import BackgroundImageEpisode from '../BackgroundImage/BackgroundImageEpisode';
-import EpisodeList from '../CardEpisode/EpisodeList';
+import BackgroundImageEpisode from '../components/BackgroundImage/BackgroundImageEpisode';
+import EpisodeList from '../components/EpisodeList/EpisodeList';
 
 const Episode = ({}) => {
   return (
