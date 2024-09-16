@@ -1,13 +1,12 @@
-import css from './Stars.module.css';
+import css from '../Stars/Stars.module.css';
 
-const Stars = ({}) => {
+const Stars = () => {
   return (
     <div>
-      <section className={css.animation}>
-        <span className={css.star}></span>
-        <span className={css.star2}></span>
-        <span className={css.star3}></span>
-        <span className={css.star4}></span>
+      <section className="wrapper">
+        <div className={css.stars1}></div>
+        <div className={css.stars2}></div>
+        <div className={css.stars3}></div>
       </section>
     </div>
   );
