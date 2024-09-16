@@ -1,53 +1,53 @@
 import { Select, Space } from 'antd';
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
 
-const SelectItem = () => {
+const SelectItem = ({ handleChange }) => {
+  const handleSpeciesChange = (value) => {
+    handleChange({ type: 'species', value });
+  };
+
+  const handleStatusChange = (value) => {
+    handleChange({ type: 'status', value });
+  };
   return (
     <Space wrap>
       <Select
         defaultValue="Species"
-        style={{
-          width: 120,
-        }}
-        onChange={handleChange}
+        style={{ width: 120 }}
+        onChange={handleSpeciesChange}
         options={[
           {
-            value: 'Human',
+            value: 'human',
             label: 'Human',
           },
           {
-            value: 'Alien',
+            value: 'alien',
             label: 'Alien',
           },
           {
-            value: 'Animal',
+            value: 'animal',
             label: 'Animal',
           },
           {
-            value: 'Robot',
+            value: 'robot',
             label: 'Robot',
           },
         ]}
       />
       <Select
         defaultValue="Status"
-        style={{
-          width: 120,
-        }}
-        onChange={handleChange}
+        style={{ width: 120 }}
+        onChange={handleStatusChange}
         options={[
           {
-            value: 'Dead',
+            value: 'dead',
             label: 'Dead',
           },
           {
-            value: 'Alive',
+            value: 'alive',
             label: 'Alive',
           },
           {
-            value: 'Unknown',
+            value: 'unknown',
             label: 'Unknown',
           },
         ]}

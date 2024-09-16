@@ -4,6 +4,7 @@ import CardCharacter from '../CardCharacter/CardCharacter';
 import { useEffect, useState } from 'react';
 import { selectArray, selectTotal } from '../../redux/RickandMorty/selectors';
 import { Pagination } from 'antd';
+import SelectItem from '../Select/SelectItem';
 import css from './CharacterList.module.css';
 
 const CharacterList = () => {
@@ -11,10 +12,27 @@ const CharacterList = () => {
   const dispatch = useDispatch();
   const array = useSelector(selectArray);
   const total = useSelector(selectTotal);
+  const [filters, setFilters] = useState({
+    status: '',
+    species: '',
+  });
 
   useEffect(() => {
-    dispatch(fetchGetCharacter(page));
-  }, [dispatch, page]);
+    dispatch(
+      fetchGetCharacter({
+        page,
+        status: filters.status,
+        species: filters.species,
+      })
+    );
+  }, [dispatch, page, filters]);
+
+  const handleChange = ({ type, value }) => {
+    setFilters((preFilter) => ({
+      ...preFilter,
+      [type]: value,
+    }));
+  };
 
   const handlePageChange = (page) => {
     setPage(page);
@@ -22,6 +40,10 @@ const CharacterList = () => {
 
   return (
     <div className={css['character-list']}>
+      <div className={css['select-item']}>
+        <SelectItem handleChange={handleChange} />
+      </div>
+
       <ul className={css['character-grid']}>
         {array.length > 0 ? (
           array.map((item) => (

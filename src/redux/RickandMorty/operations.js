@@ -3,14 +3,14 @@ import axios from 'axios';
 
 export const fetchGetCharacter = createAsyncThunk(
   'character/fetchGetCharacter',
-  async (page, thunkAPI) => {
+  async ({ page, status, species }, thunkAPI) => {
     const BASE_URL = 'https://rickandmortyapi.com/api';
-    const END_POINT = `/character?page=${page}`;
+    const END_POINT = `/character?page=${page}&status=${status}&species=${species}`;
     const url = BASE_URL + END_POINT;
 
     try {
       const response = await axios.get(url);
-      const limitedResults = response.data.results.slice(0, 18);
+      const limitedResults = response.data.results.slice(0, 16);
       return { ...response.data, results: limitedResults };
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);

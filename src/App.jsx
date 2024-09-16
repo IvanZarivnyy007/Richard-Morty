@@ -2,7 +2,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import HeaderBar from './components/HeaderBar/HeaderBar';
 import Loader from './components/Loader/Loader';
-import SelectItem from './components/Select/SelectItem';
 
 const Home = lazy(() => import('../src/pages/Home'));
 const Episode = lazy(() => import('../src/pages/Episode'));
@@ -21,7 +20,6 @@ const App = () => {
 
   return (
     <div className={imgByPage[pageName]}>
-      <SelectItem />
       <HeaderBar />
       <Suspense className="loader-one" fallback={<Loader />}>
         <Routes>

@@ -5,9 +5,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 .character-item {
-  flex: 1 1 calc(33.333% - 16px);
+  flex: 1 1 calc(25.333% - 16px);
   box-sizing: border-box;
+}
+
+.select-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
