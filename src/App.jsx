@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import HeaderBar from './components/HeaderBar/HeaderBar';
 import Loader from './components/Loader/Loader';
@@ -9,8 +9,17 @@ const Character = lazy(() => import('../src/pages/Character'));
 const Location = lazy(() => import('../src/pages/Location'));
 
 const App = () => {
+  const location = useLocation();
+  const pageName = location.pathname;
+  const imgByPage = {
+    '/': 'home-container',
+    '/character': 'char-container',
+    '/episode': 'epi-container',
+    '/location': 'char-container',
+  };
+
   return (
-    <div>
+    <div className={imgByPage[pageName]}>
       <HeaderBar />
       <Suspense className="loader-one" fallback={<Loader />}>
         <Routes>

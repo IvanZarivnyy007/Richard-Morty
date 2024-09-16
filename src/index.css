@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .character-title {
   display: flex;
   justify-content: center;
@@ -19,6 +25,15 @@
   border-radius: 10px;
   text-shadow: 1px 5px 0 brown;
   margin-top: 95px;
+}
+.location-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin-top: 27px;
+  color: chartreuse;
+  margin-top: 44px;
 }
 
 .episode-title {
@@ -103,4 +118,24 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.char-container {
+  background: no-repeat url('../src/images/121212.jpg');
+  width: 100vw;
+}
+.home-container {
+  background-image: url('../src/images/1259528.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.epi-container {
+  background: no-repeat url('../src/images/1335145.jpg');
+  width: 100vw;
+}
+.location-container {
+  background: no-repeat url('../src/images/121212.jpg');
+  width: 100vw;
 }
