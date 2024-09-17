@@ -1,4 +1,5 @@
 import css from './CardCharacter.module.css';
+import ModalCharacter from '../ModalCharacter/ModalCharacter';
 
 const CardCharacter = ({ item }) => {
   return (
@@ -21,16 +22,8 @@ const CardCharacter = ({ item }) => {
             </>
           )}
         </p>
-        <p className={css['card-detail']}>
-          <strong>Gender:</strong> {item.gender}
-        </p>
-        <p className={css['card-detail']}>
-          <strong>Origin:</strong> {item.origin?.name}
-        </p>
-        <p className={`${css['card-detail']} ${css['location-hower']}`}>
-          <strong>Location:</strong> <span>{item.location?.name}</span>
-        </p>
       </div>
+      <ModalCharacter item={item} />
     </div>
   );
 };
