@@ -17,9 +17,9 @@ export const fetchUserSignup = createAsyncThunk(
     const url = BASE_URL + END_POINT;
 
     try {
-      const response = await axios.get(url, userData);
+      const response = await axios.post(url, userData);
       saveToken(response.data.token);
-      return response.data.token;
+      return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
@@ -33,9 +33,9 @@ export const fetchUserLogin = createAsyncThunk(
     const url = BASE_URL + END_POINT;
 
     try {
-      const response = await axios.get(url, userData);
+      const response = await axios.post(url, userData);
       saveToken(response.data.token);
-      return response.data.token;
+      return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
@@ -43,13 +43,13 @@ export const fetchUserLogin = createAsyncThunk(
 );
 export const fetchUserLogout = createAsyncThunk(
   'name/fetchUserLogout',
-  async (userData, thunkAPI) => {
+  async (_, thunkAPI) => {
     const BASE_URL = 'https://connections-api.goit.global';
     const END_POINT = '/users/logout';
     const url = BASE_URL + END_POINT;
 
     try {
-      const response = await axios.get(url, userData);
+      const response = await axios.post(url);
       resetHeaders();
       return response.data.token;
     } catch (e) {

@@ -38,7 +38,7 @@ const RegistrationForm = ({}) => {
           <Field
             className={css['form-field']}
             name="password"
-            type="text"
+            type="password"
             placeholder="Password"
           />
           <p className={css['password-subtitle']}>

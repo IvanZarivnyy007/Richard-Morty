@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
 import Loader from './components/Loader/Loader';
-import Layout from './components/Layout/Layout';
+// import Layout from './components/Layout/Layout';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import RestrictedRoute from './components/RestrictedRoute/RestrictedRoute';
 import Navigation from './components/Navigation/Navigation';

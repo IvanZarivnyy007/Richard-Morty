@@ -1,14 +1,14 @@
 import AuthNaviration from '../AuthNavigation/AuthNaviration';
 import UserNaviration from '../UserNavigation/UserNaviration';
-import { selectLogedIn } from '../../redux/auth/selectors';
+import { selectIsLoggedIn } from '../../redux/auth/selectors';
 import { useSelector } from 'react-redux';
 import css from './Navigation.module.css';
 
 const Navigation = () => {
-  const LogedIn = useSelector(selectLogedIn);
+  const IsLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <nav className={css.container}>
-      {LogedIn ? <UserNaviration /> : <AuthNaviration />}
+      {IsLoggedIn ? <UserNaviration /> : <AuthNaviration />}
     </nav>
   );
 };
