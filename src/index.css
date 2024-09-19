@@ -148,3 +148,9 @@
   background: no-repeat url('../src/images/121212.jpg');
   width: 100vw;
 }
+
+.home-page {
+  height: 85vh;
+  overflow: hidden;
+  position: relative;
+}
