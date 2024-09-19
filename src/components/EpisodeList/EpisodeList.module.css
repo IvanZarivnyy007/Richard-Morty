@@ -2,11 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: 38px;
 }
 
 .character-item {
   list-style: none;
-  flex: 1 1 calc(33.333% - 16px);
+  flex: 1 1 calc(25.333% - 16px);
   box-sizing: border-box;
 }
 

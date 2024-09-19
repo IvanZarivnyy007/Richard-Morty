@@ -10,7 +10,9 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    // backgroundColor: 'lawngreen',
+    background: 'rgba(16 141 114 / 93%)',
+    boxShadow: '0px 4px 8px rgb(5 255 36 / 81%)',
+    transition: 'transform 0.2s, box-shadow 0.2s',
   },
 };
 
@@ -50,7 +52,13 @@ const ModalCharacter = ({ item }) => {
 
         <div>
           <img src={item.image} alt={item.name} className={css['card-image']} />
-          <h2 className={css['card-name']}>{item.name}</h2>
+          <h2 className={css['card-name']}>
+            {item.name}{' '}
+            <a className={css['info-character']} href={item.url}>
+              Link
+            </a>
+          </h2>
+
           <p className={css['card-detail']}>
             <strong>Gender:</strong> {item.gender}
           </p>

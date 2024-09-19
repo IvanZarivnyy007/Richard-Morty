@@ -1,9 +1,9 @@
-// import Stars from '../components/Stars/Stars';
+import Stars from '../components/Stars/Stars';
 
 const Home = () => {
   return (
     <div>
-      {/* <Stars /> */}
+      <Stars />
       <h1 className="home-title">The Rick and Morty Experience</h1>
     </div>
   );

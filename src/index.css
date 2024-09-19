@@ -42,9 +42,10 @@
   font-size: 80px;
   font-family: sans-serif;
   margin-left: 40px;
-  margin-top: 13px;
+  margin-top: 29px;
   /* background-color: yellow; */
   color: rebeccapurple;
+  margin-bottom: 27px;
 }
 
 .loader {
@@ -133,8 +134,16 @@
 }
 .epi-container {
   background: no-repeat url('../src/images/1335145.jpg');
+  background-size: cover;
+  /* background-position: center; */
   width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
+
 .location-container {
   background: no-repeat url('../src/images/121212.jpg');
   width: 100vw;
