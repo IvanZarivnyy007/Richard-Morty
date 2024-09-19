@@ -10,7 +10,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    background: 'rgba(16 141 114 / 93%)',
+    background: 'rgba(0 0 0  / 50%)',
     boxShadow: '0px 4px 8px rgb(5 255 36 / 81%)',
     transition: 'transform 0.2s, box-shadow 0.2s',
   },

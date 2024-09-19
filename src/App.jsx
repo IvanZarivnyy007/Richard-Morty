@@ -7,6 +7,9 @@ const Home = lazy(() => import('../src/pages/Home'));
 const Episode = lazy(() => import('../src/pages/Episode'));
 const Character = lazy(() => import('../src/pages/Character'));
 const Location = lazy(() => import('../src/pages/Location'));
+// import RegistrationForm from './components/RegistrationForm/RegistrationForm';
+
+// import LoginForm from './components/LoginForm/LoginForm';
 
 const App = () => {
   const location = useLocation();
@@ -21,6 +24,8 @@ const App = () => {
   return (
     <div className={imgByPage[pageName]}>
       <HeaderBar />
+      {/* <RegistrationForm /> */}
+      {/* <LoginForm /> */}
       <Suspense className="loader-one" fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />,

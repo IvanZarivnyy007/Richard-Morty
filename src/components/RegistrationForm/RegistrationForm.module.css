@@ -1,0 +1,92 @@
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  color: #ffffff;
+  padding: 20px;
+  background: transparent;
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+}
+
+.title-form {
+  font-size: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 20px;
+  color: #7fdbff;
+  display: grid;
+  gap: 13px;
+  /* background-color: rgba(135, 206, 250, 0.3); */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  padding: 10px;
+  border: 2px solid #7fdbff;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-field::placeholder {
+  color: #7fdbff;
+}
+
+.email-subtitle,
+.password-subtitle {
+  font-size: 0.9rem;
+  color: #7fdbff;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #7fdbff;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background: #33ccff;
+}
+
+a {
+  color: #7fdbff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}

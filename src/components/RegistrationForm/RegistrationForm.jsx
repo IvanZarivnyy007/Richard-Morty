@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import css from './RegistrationForm.module.css';
 
@@ -25,8 +24,8 @@ const RegistrationForm = ({}) => {
             placeholder="Email address"
           />
           <p className={css['email-subtitle']}>
-            Your email address will be added to the metadata of packages that
-            you publish, so it may be seen publicly.
+            Your email address will be added to the metadata of packages <br />{' '}
+            that you publish, so it may be seen publicly.
           </p>
 
           <Field

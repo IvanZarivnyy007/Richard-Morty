@@ -17,7 +17,8 @@
 .home-title {
   display: flex;
   font-size: 60px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Press Start 2P', cursive;
   color: sandybrown;
   margin-left: 300px;
   /* background-color: rgba(135, 206, 250, 0.2); */
