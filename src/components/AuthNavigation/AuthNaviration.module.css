@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  /* background-color: rgba(135, 206, 250, 0.2); */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navlink {
+  color: sandybrown;
+  text-decoration: none;
+  padding: 6px 6px;
+  font-size: 29px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0 white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.navlink:hover {
+  background-color: white;
+}
+
+.navlink.active {
+  background-color: white;
+  font-weight: bold;
+}
+.containerRegistration {
+}

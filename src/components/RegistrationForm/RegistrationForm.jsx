@@ -1,8 +1,15 @@
 import { Formik, Field, Form } from 'formik';
 import css from './RegistrationForm.module.css';
+import { useDispatch } from 'react-redux';
+import { fetchUserSignup } from '../../redux/auth/operations';
 
 const RegistrationForm = ({}) => {
-  const handleSubmit = () => {};
+  const dispatch = useDispatch();
+
+  const handleSubmit = async (value) => {
+    dispatch(fetchUserSignup(value));
+  };
+
   return (
     <div className={css['container-form']}>
       <h1 className={css['title-form']}> Create account</h1>
@@ -37,12 +44,6 @@ const RegistrationForm = ({}) => {
           <p className={css['password-subtitle']}>
             Minimum of 10 characters and must meet our password guidelines
           </p>
-          <Field
-            className={css['form-field']}
-            name="password"
-            type="text"
-            placeholder="Repet Password"
-          />
           <button className={css['form-button']} type="submit">
             Submit
           </button>

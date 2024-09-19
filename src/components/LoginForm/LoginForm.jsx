@@ -1,8 +1,14 @@
 import { Formik, Field, Form } from 'formik';
 import css from './LoginForm.module.css';
+import { fetchUserLogin } from '../../redux/auth/operations';
+import { useDispatch } from 'react-redux';
 
 const LoginForm = ({}) => {
-  const handleSubmit = () => {};
+  const dispatch = useDispatch();
+
+  const handleSubmit = (values) => {
+    dispatch(fetchUserLogin(values));
+  };
 
   return (
     <div className={css['form-container']}>

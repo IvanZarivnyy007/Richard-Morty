@@ -1,22 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import AuthNaviration from '../AuthNavigation/AuthNaviration';
+import UserNaviration from '../UserNavigation/UserNaviration';
+import { selectLogedIn } from '../../redux/auth/selectors';
+import { useSelector } from 'react-redux';
 import css from './Navigation.module.css';
 
 const Navigation = () => {
+  const LogedIn = useSelector(selectLogedIn);
   return (
-    <div className={css.container}>
-      <NavLink to="/" className={css.navlink}>
-        Home
-      </NavLink>
-      <NavLink to="/character" className={css.navlink}>
-        Character
-      </NavLink>
-      <NavLink to="/location" className={css.navlink}>
-        Location
-      </NavLink>
-      <NavLink to="/episode" className={css.navlink}>
-        Episode
-      </NavLink>
-    </div>
+    <nav className={css.container}>
+      {LogedIn ? <UserNaviration /> : <AuthNaviration />}
+    </nav>
   );
 };
 
