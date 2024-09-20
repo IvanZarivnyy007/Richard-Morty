@@ -12,24 +12,26 @@ const LoginForm = ({}) => {
 
   return (
     <div className={css['form-container']}>
-      <h1 className={css['title-form']}>Sign Up</h1>
+      <h1 className={css['title-form']}>Log In</h1>
       <Formik
-        initialValues={{ name: '', password: '' }}
+        initialValues={{ email: '', password: '' }}
         onSubmit={handleSubmit}
       >
         <Form className={css['form']}>
           <Field
             className={css['form-field']}
-            name="name"
+            name="email"
             type="text"
-            placeholder="Username"
+            placeholder="Email"
+            autoComplete="email"
           />
           <a href="http://">Forgot password?</a>
           <Field
             name="password"
-            type="text"
+            type="password"
             className={css['form-field']}
             placeholder="Password"
+            autoComplete="current-password"
           />
 
           <button className={css['form-button']} type="submit">

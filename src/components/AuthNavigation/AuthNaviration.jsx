@@ -4,15 +4,18 @@ import css from './AuthNaviration.module.css';
 const AuthNaviration = ({}) => {
   return (
     <div className={css.container}>
-      <NavLink to="/" className={css.navlink}>
-        Home
-      </NavLink>
-      <div className={css.containerRegistration}>
-        <NavLink to="/register" className={css.navlink}>
-          Registration
+      <div className={css.containerHome}>
+        <NavLink to="/" className={css.navlink}>
+          Home
         </NavLink>
+      </div>
+
+      <div className={css.containerRegistration}>
         <NavLink to="/login" className={css.navlink}>
           Login
+        </NavLink>
+        <NavLink to="/register" className={css.navlink}>
+          Registration
         </NavLink>
       </div>
     </div>

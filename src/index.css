@@ -125,6 +125,8 @@
 .char-container {
   background: no-repeat url('../src/images/121212.jpg');
   width: 100vw;
+  overflow: hidden;
+  position: relative;
 }
 .home-container {
   background-image: url('../src/images/1259528.jpg');
@@ -138,11 +140,14 @@
   background-size: cover;
   /* background-position: center; */
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  /* height: 100vh; */
+  /* overflow: hidden;
+  position: relative; */
 }
 
 .location-container {
@@ -154,4 +159,27 @@
   height: 85vh;
   overflow: hidden;
   position: relative;
+}
+
+.logInImg {
+  background: no-repeat url('../src/images/logeidImg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.registerImg {
+  background: no-repeat url('../src/images/registration.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

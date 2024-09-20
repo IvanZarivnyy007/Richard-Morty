@@ -1,11 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-  /* background-color: rgba(135, 206, 250, 0.2); */
-  padding: 10px;
-  border-radius: 10px;
+  justify-content: space-between;
 }
 
 .navlink {
@@ -17,6 +12,7 @@
   border-radius: 5px;
   text-shadow: 1px 1px 0 white;
   font-family: 'Press Start 2P', cursive;
+  margin-left: 25px;
 }
 
 .navlink:hover {
@@ -27,5 +23,14 @@
   background-color: white;
   font-weight: bold;
 }
+
 .containerRegistration {
+  display: flex;
+  gap: 20px;
+  margin-right: 65px;
+  padding: 10px;
+}
+
+.containerHome {
+  padding: 10px;
 }

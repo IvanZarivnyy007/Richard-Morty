@@ -23,12 +23,14 @@ const RegistrationForm = ({}) => {
             name="name"
             type="text"
             placeholder="Username"
+            autoComplete="username"
           />
           <Field
             className={css['form-field']}
             name="email"
             type="email"
             placeholder="Email address"
+            autoComplete="email"
           />
           <p className={css['email-subtitle']}>
             Your email address will be added to the metadata of packages <br />{' '}
@@ -40,6 +42,7 @@ const RegistrationForm = ({}) => {
             name="password"
             type="password"
             placeholder="Password"
+            autoComplete="current-password"
           />
           <p className={css['password-subtitle']}>
             Minimum of 10 characters and must meet our password guidelines

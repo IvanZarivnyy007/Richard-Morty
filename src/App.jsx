@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import { useSelector } from 'react-redux';
 
 import Loader from './components/Loader/Loader';
 // import Layout from './components/Layout/Layout';
@@ -16,18 +17,22 @@ const Registration = lazy(() => import('../src/pages/Registration'));
 
 const App = () => {
   const location = useLocation();
+
   const pageName = location.pathname;
   const imgByPage = {
     '/': 'home-container',
     '/character': 'char-container',
     '/episode': 'epi-container',
     '/location': 'char-container',
+    '/login': 'logInImg',
+    '/register': 'registerImg',
   };
 
   return (
     // <Layout>
     <div className={imgByPage[pageName]}>
       <Navigation />
+
       <Suspense className="loader-one" fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />,
@@ -52,19 +57,17 @@ const App = () => {
           ,
           <Route
             path="/login"
-            element={<RestrictedRoute components={<Login />} redirect="/" />}
+            element={<RestrictedRoute redirect="/" component={<Login />} />}
           />
           ,
           <Route
             path="/register"
             element={
-              <RestrictedRoute components={<Registration />} redirect="/" />
+              <RestrictedRoute redirect="/" component={<Registration />} />
             }
           />
-          ,
         </Routes>
       </Suspense>
-      ;
     </div>
     // </Layout>
   );

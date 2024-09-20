@@ -1,16 +1,11 @@
 .form-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  height: 0vh;
-  color: #ffffff;
-  background: transparent;
-  position: relative;
-  z-index: 100;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 40px;
 }
 
 .title-form {
@@ -18,6 +13,7 @@
   font-family: 'Press Start 2P', cursive;
   margin-bottom: 20px;
   color: #7fdbff;
+  margin-left: 60px;
 }
 
 .form {
@@ -28,7 +24,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  background-color: rgba(135, 206, 250, 0.3);
+  background-color: transparent;
 }
 
 .form-field {

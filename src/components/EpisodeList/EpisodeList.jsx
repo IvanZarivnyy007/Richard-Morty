@@ -42,7 +42,8 @@ const EpisodeList = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
-          marginTop: '40px',
+          marginTop: '30px',
+          marginBottom: '30px',
         }}
       />
     </div>

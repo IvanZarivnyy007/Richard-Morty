@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import css from './UserNaviration';
+import css from './UserNavigation.module.css';
 import { fetchUserLogout } from './../../redux/auth/operations';
 import { useDispatch } from 'react-redux';
 
@@ -26,7 +26,7 @@ const UserNaviration = ({}) => {
       </NavLink>
 
       <div className={css.buttonLogout}>
-        <button className={css.navlink} onClick={handleLogout}>
+        <button className={css.navlinkbuttonLogout} onClick={handleLogout}>
           Logout
         </button>
       </div>

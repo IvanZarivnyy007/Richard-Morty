@@ -51,7 +51,7 @@ export const fetchUserLogout = createAsyncThunk(
     try {
       const response = await axios.post(url);
       resetHeaders();
-      return response.data.token;
+      return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }

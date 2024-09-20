@@ -6,6 +6,8 @@ import css from './Navigation.module.css';
 
 const Navigation = () => {
   const IsLoggedIn = useSelector(selectIsLoggedIn);
+  // console.log(IsLoggedIn);
+
   return (
     <nav className={css.container}>
       {IsLoggedIn ? <UserNaviration /> : <AuthNaviration />}

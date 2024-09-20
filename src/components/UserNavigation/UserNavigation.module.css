@@ -18,6 +18,26 @@
   text-shadow: 1px 1px 0 white;
   font-family: 'Press Start 2P', cursive;
 }
+.navlinkbuttonLogout {
+  color: sandybrown;
+  padding: 3px 6px;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 2px 2px 3 #ff0808;
+  font-family: 'Press Start 2P', cursive;
+  background: transparent;
+  margin-top: 8px;
+}
+
+.navlinkbuttonLogout:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.navlinkbuttonLogout.active {
+  background-color: rgb(255, 0, 0);
+  font-weight: bold;
+}
 
 .navlink:hover {
   background-color: white;
