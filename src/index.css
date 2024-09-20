@@ -27,6 +27,24 @@
   text-shadow: 1px 5px 0 brown;
   margin-top: 95px;
 }
+.home-help {
+  display: flex;
+  font-size: 10px;
+  /* font-family: sans-serif; */
+  font-family: 'Press Start 2P', cursive;
+  color: #00eff3;
+  margin-left: 310px;
+  /* background-color: rgba(135, 206, 250, 0.2); */
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0 #0f0a0a;
+  margin-top: 360px;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .location-title {
   display: flex;
   justify-content: center;
